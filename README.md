@@ -47,14 +47,14 @@ You want a version ending in `+xpu` and `True`. If it ends in `+cpu`, the wrong 
 Run with no arguments to be prompted for the input and output folders:
 
 ```powershell
-python gpu_audiobook.py
+python audiobook.py
 ```
 
 Or pass everything on the command line:
 
 ```powershell
-python gpu_audiobook.py -i books -o audio --voice af_heart
-python gpu_audiobook.py -i "books\My Book.epub" -o audio --max-workers 2
+python audiobook.py -i books -o audio --voice af_heart
+python audiobook.py -i "books\My Book.epub" -o audio --max-workers 2
 ```
 
 `--input` can be a folder (you pick a book from the list) or a single file. Audio is written to `<output>/<book name>/`.
