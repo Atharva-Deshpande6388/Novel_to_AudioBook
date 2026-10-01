@@ -6,9 +6,9 @@ CUDA) while keeping total VRAM use under a budget. Finished chunks are kept,
 so an interrupted run resumes where it stopped.
 
 Examples:
-    python gpu_audiobook.py
-    python gpu_audiobook.py -i books -o audio --voice af_heart
-    python gpu_audiobook.py -i "books\\My Book.epub" -o audio --max-workers 2
+    python audiobook.py
+    python audiobook.py -i books -o audio --voice af_heart
+    python audiobook.py -i "books\\My Book.epub" -o audio --max-workers 2
 """
 
 import argparse
