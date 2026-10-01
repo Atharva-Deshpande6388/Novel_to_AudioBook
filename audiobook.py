@@ -11,8 +11,8 @@ from kokoro import KPipeline
 from ebooklib import epub, ITEM_DOCUMENT
 from bs4 import BeautifulSoup
 
-INPUT_DIR = Path(r"G:\Kokoro\input")
-OUTPUT_DIR = Path(r"G:\Kokoro\output")
+INPUT_DIR = Path(input("Enter input directory: "))
+OUTPUT_DIR = Path(input("Enter output directory: "))
 VOICE = "af_river"
 LANGUAGE = 'a'
 MAX_CHARS = 1200
