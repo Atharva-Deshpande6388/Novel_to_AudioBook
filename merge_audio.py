@@ -8,10 +8,11 @@ from pathlib import Path
 import soundfile as sf
 import numpy as np
 
-# input_folder = Path(r"G:\Kokoro\output\ReZero_arc1")
-# output_file = Path(r"G:\Kokoro\merge") /"audiobook.wav"
-input_folder = Path(r"G:\novel\My Slain Dragon Bride Audio\Part_002")
-output_file = Path(r"G:\novel\merge") /f"{input_folder}.wav"
+
+input_folder = Path(input("Enter input folder path: "))
+output_folder = Path(input("Enter output folder path: "))
+
+output_file = output_folder / f"{input_folder.name}.wav"
 
 audio_files = sorted(input_folder.glob("*.wav"))
 
